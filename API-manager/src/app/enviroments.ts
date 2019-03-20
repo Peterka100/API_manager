@@ -1,4 +1,6 @@
-export interface ENVIROMENTS: Environment[] = [
+import { Enviroment } from './enviroment';
+
+export const ENVIROMENTS: Enviroment[] = [
       { id: 1, name: 'DEV A' },
       { id: 2, name: 'DEV B' },
       { id: 3, name: 'UAT 1' },
