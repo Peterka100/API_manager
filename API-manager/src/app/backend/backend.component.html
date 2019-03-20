@@ -1,3 +1,61 @@
+<div class="container">
 <p>
-  backend works!
+  Komponenta Backend funguje !
 </p>
+
+<div class="row">
+  <div class="col-5" style="margin-left:45px" >
+    <button (click)="checkBackend()" > BackEnd test </button>
+      <div align="left">
+        <pre>
+          <code>
+            {{backend.backend | json}}
+          </code>
+        </pre>
+      </div>
+  </div>
+
+
+  <div class="col-5" style="margin-right:45px">
+    <button (click)="checkBackend()" > BackEnd prod </button>
+    <div align="left">
+        <pre>
+          <code>
+            {{backend.backend | json}}
+          </code>
+        </pre>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!--
+<div class="text-left" >
+  <button (click)="checkBackend()" > BackEnd! </button>
+
+  <div align="left">
+    <pre>
+      <code>
+        {{backend.backend | json}}
+      </code>
+    </pre>
+  </div>
+
+</div>
+
+<div class="text-right" >
+  <button (click)="checkBackend()" > BackEnd! </button>
+
+  <div align="right">
+    <pre>
+      <code>
+        {{backend.backend | json}}
+      </code>
+    </pre>
+  </div>
+
+</div>
+
+
+-->
